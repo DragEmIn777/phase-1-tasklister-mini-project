@@ -29,6 +29,7 @@ const addTask = task => {
 
   //create dropdown
   let dropdown = document.createElement(`select`)
+  dropdown.innerHTML = `<option placeholder='Select Priority'>Select Priority</option>`
   addPriorityOptions(dropdown)
   
 
@@ -46,7 +47,7 @@ const deleteTask = e => {
 }
 
 const addPriorityOptions = dropdown => {
-  const priorityOptions = ['Select Priority', 'High Priority', 'Medium Priority', 'Low Priority']
+  const priorityOptions = ['High Priority', 'Medium Priority', 'Low Priority']
 
   for (const priorityLevel in priorityOptions){
     let option = document.createElement(`option`)
