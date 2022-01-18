@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     else{
       addTask(newTask)
-      let newPriorityDropdown = document.querySelector(`ul#tasks li`).lastChild
-      newPriorityDropdown.addEventListener('change', addPriorityHandler)
+      // let newPriorityDropdown = document.querySelector(`ul#tasks li`).lastChild
+      // newPriorityDropdown.addEventListener('change', addPriorityHandler)
     }
     //reset the input field after task added
     document.querySelector(`form`).reset()
